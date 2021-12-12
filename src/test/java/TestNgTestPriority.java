@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
  *  If no priority defined then it will run first than one priority is defined.
  *  Positive priority is lowest to high.
  *  without priority is run in alphabetical order.`
+ *  If priority is not given then it will run in alphabetical order
  *
  *  Output of this code is:
  *  BWithNegativePriority method test...
@@ -42,7 +43,7 @@ public class TestNgTestPriority {
     }
 
 
-    @Test(priority = 1)
+    @Test(priority = 1,invocationCount = 5)
     public void EWithPositivePriority()
     {
         System.out.println("EWithPositivePriority method test...");
@@ -61,7 +62,7 @@ public class TestNgTestPriority {
     }
 
 
-    @Test(priority = 0)
+    @Test(priority = 0,description = "This is own description")
     public void HWithPositivePriority()
     {
         System.out.println("HWithPositivePriority method test...");
