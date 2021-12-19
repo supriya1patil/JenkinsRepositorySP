@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test1"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.528">
+  <properties />
+  
+  
+            <testcase name="test" time="1.891" classname="testngsuite.DataProviderTest" />
+                <testcase name="test" time="2.637" classname="testngsuite.DataProviderTest" />
+      
+</testsuite>
